@@ -53,7 +53,7 @@ else:
 
     with col3:
         # Home ownership dropdown
-        home_ownership = st.selectbox("Home Ownership Status", ("Own", "Mortgage", "Rent"), value=0)
+        home_ownership = st.selectbox("Home Ownership Status", ("","Own", "Mortgage", "Rent"))
 
     # Create another row with 3 columns for Employment Duration, Loan Purpose, and Loan Amount
     col4, col5, col6 = st.columns(3)
@@ -64,7 +64,7 @@ else:
 
     with col5:
         # Purpose of the loan dropdown
-        loan_purpose = st.selectbox("Purpose of the Loan", ("Education", "Home Improvement"), value=0)
+        loan_purpose = st.selectbox("Purpose of the Loan", ("","Education", "Home Improvement"))
 
     with col6:
         # Loan applied
@@ -74,7 +74,7 @@ else:
     with col7:
         rate = st.number_input("Rate (%)", min_value=0.0, step=0.1, value=0)
     with col8:
-        default = st.selectbox("Default",("Yes","No"), value=0)
+        default = st.selectbox("Default",("","Yes","No"))
     with col9:
         credit_history = st.number_input("Credit History", min_value =0.0, step=1.0, value=0)
 
