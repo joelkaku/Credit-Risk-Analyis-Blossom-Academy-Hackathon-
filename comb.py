@@ -15,8 +15,7 @@ if 'logged_in' not in st.session_state:
 # Check if the user is logged in
 if not st.session_state['logged_in']:
     # Login Form
-    default_username = "Admin"
-    username = st.text_input("Username", value=default_username)
+    st.text_input("Username", value="Admin", disabled=True)  # Make username uneditable
 
     password = st.text_input("Password", type="password")
     show_password = st.checkbox("Show password")
@@ -26,12 +25,12 @@ if not st.session_state['logged_in']:
 
     # Login button
     if st.button("LOGIN"):
-        # Hash the entered password (optional, since we bypass validation)
-        hashed_password = hash_password(password)
-
-        # Bypass password check and log in directly
-        st.session_state['logged_in'] = True
-        st.success("Login successful! Redirecting to the model page...")
+        # Check if the password is correct (set to '1234')
+        if password == "1234":
+            st.session_state['logged_in'] = True
+            st.success("Login successful! Redirecting to the model page...")
+        else:
+            st.error("Incorrect password. Please try again.")
 else:
     # If logged in, display the predictive model page
     st.title("SPJ Savings and Loans Default Predictive Model")
