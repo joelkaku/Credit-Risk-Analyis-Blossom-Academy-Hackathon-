@@ -98,3 +98,8 @@ else:
     if st.button("Predict"):
         # Placeholder for prediction logic
         st.success("Prediction completed.")
+
+ # Back button to log out and return to login page
+    if st.button("Back to Login"):
+        st.session_state['logged_in'] = False
+        st.success("You have logged out. Please log in again.")
