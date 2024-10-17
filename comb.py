@@ -78,28 +78,11 @@ else:
     with col7:
         rate = st.number_input("Rate (%)", min_value=0.0, step=0.1)
     with col8:
-        default = st.selectbox("Defaul",("Yes","No"))
+        default = st.selectbox("Default",("Yes","No"))
     with col9:
-        credit_history = st.number_input("Credit History", min_value =0.0, max_value =30.0, step=1)
+        credit_history = st.number_input("Credit History", min_value =0.0, step=1.0)
 
-    # Control Section
-    st.header("Control Section")
 
-    # Rate percentage
-    rate = st.number_input("Rate (%)", min_value=0.0, step=0.1)
-
-    # Loan approval status dropdown
-    loan_approval_status = st.selectbox("LOAN APPROVAL Status", ("Approved", "Not Approved"))
-
-    # Calculate loan amount as a percentage of income
-    if annual_income > 0:
-        percent_income = (loan_applied / annual_income) * 100
-    else:
-        percent_income = 0
-    st.write(f"Percent Income: {percent_income:.2f}%")
-
-    # Applicant's credit history input
-    credit_history = st.text_area("Applicant's Credit HISTORY")
 
     # Button for prediction
     if st.button("Predict"):
