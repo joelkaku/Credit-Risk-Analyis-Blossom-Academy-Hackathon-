@@ -45,7 +45,7 @@ else:
 
     with col1:
         # Age input
-        age = st.number_input("Age (18 and above)", min_value=18, value=0.0)
+        age = st.number_input("Age (18 and above)", min_value=18, value=0)
 
     with col2:
         # Annual income input
@@ -68,15 +68,15 @@ else:
 
     with col6:
         # Loan applied
-        loan_applied = st.number_input("Loan Applied (Dollars)", min_value=0.0, step=500.0, value=0)
+        loan_applied = st.number_input("Loan Applied (Dollars)", min_value=0.0, step=500.0, value=0.0)
     
     col7, col8, col9 = st.columns(3)
     with col7:
-        rate = st.number_input("Rate (%)", min_value=0.0, step=0.1, value=0)
+        rate = st.number_input("Rate (%)", min_value=0.0, step=0.1, value=0.0)
     with col8:
         default = st.selectbox("Default",("","Yes","No"))
     with col9:
-        credit_history = st.number_input("Credit History", min_value =0.0, step=1.0, value=0)
+        credit_history = st.number_input("Credit History", min_value =0.0, step=1.0, value=0.0)
 
 
 
