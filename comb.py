@@ -78,7 +78,7 @@ else:
     with col7:
         rate = st.number_input("Rate (%)", min_value=0.0, step=0.1)
     with col8:
-        default = st.selectbox("Defaul",("Yes","No")
+        default = st.selectbox("Defaul",("Yes","No"))
     with col9:
         credit_history = st.number_input("Credit History", min_value =0.0, max_value =30.0, step=1)
 
