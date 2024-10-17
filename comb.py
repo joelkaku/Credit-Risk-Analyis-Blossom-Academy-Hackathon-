@@ -45,7 +45,7 @@ else:
 
     with col1:
         # Age input
-        age = st.number_input("Age (18 and above)", min_value=18, value=0)
+        age = st.number_input("Age (18 and above)", min_value=18, value=18)
 
     with col2:
         # Annual income input
