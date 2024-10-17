@@ -45,11 +45,11 @@ else:
 
     with col1:
         # Age input
-        age = st.number_input("Age (18 and above)", min_value=18, value=0)
+        age = st.number_input("Age (18 and above)", min_value=18, value=0.0)
 
     with col2:
         # Annual income input
-        annual_income = st.number_input("Annual Income (Dollars)", min_value=0.0, step=1000.0, value=0)
+        annual_income = st.number_input("Annual Income (Dollars)", min_value=0.0, step=1000.0, value=0.o)
 
     with col3:
         # Home ownership dropdown
