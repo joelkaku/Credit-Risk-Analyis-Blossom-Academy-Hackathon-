@@ -19,9 +19,6 @@ if not st.session_state['logged_in']:
 
     password = st.text_input("Password", type="password")
 
-    if show_password:
-        st.text_input("Password", value=password)
-
     # Login button
     if st.button("LOGIN"):
         # Check if the password is correct (set to '1234')
