@@ -33,7 +33,7 @@ if not st.session_state['logged_in']:
             st.error("Incorrect password. Please try again.")
 else:
     # If logged in, display the predictive model page
-    st.title("SPJ Savings and Loans Default Predictive Model")
+    st.title("SPJ Savings and Loans Predictive Model")
 
     # Instructions
     st.write("Please fill in the details below")
@@ -73,6 +73,14 @@ else:
     with col6:
         # Loan applied
         loan_applied = st.number_input("Loan Applied (Dollars)", min_value=0.0, step=500.0)
+    
+    col7, col8, col9 = st.columns(3)
+    with col7:
+        rate = st.number_input("Rate (%)", min_value=0.0, step=0.1)
+    with col8:
+        default = st.selectbox("Defaul",("Yes","No")
+    with col9:
+        credit_history = st.number_input("Credit History", min_value =0.0, max_value =30.0, step=1)
 
     # Control Section
     st.header("Control Section")
