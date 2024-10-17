@@ -49,7 +49,7 @@ else:
 
     with col2:
         # Annual income input
-        annual_income = st.number_input("Annual Income (Dollars)", min_value=0.0, step=1000.0, value=0.o)
+        annual_income = st.number_input("Annual Income (Dollars)", min_value=0.0, step=1000.0, value=0.0)
 
     with col3:
         # Home ownership dropdown
