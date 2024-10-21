@@ -36,7 +36,7 @@ The **Jupyter Notebook (Credit_Risk_Hackaton_ML.ipynb)** file contains all the c
 
 To experience the deployment aspect of our project, we’ve created a web application. Explore it via the link below:
 
-🔗 [SPJ Savings and Loans Web App]([(https://spjsavings.streamlit.app/))
+🔗 [SPJ Savings and Loans Web App]((https://spjsavings.streamlit.app/))
 
 #### Admin Access:
 
